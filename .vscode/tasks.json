@@ -1,0 +1,55 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Dev Server",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-File", "./start.ps1"],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Build for Production",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-File", "./deploy-local.ps1"],
+      "problemMatcher": [],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Push to GitHub",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-File", "./push.ps1"],
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Run Lint",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "lint"],
+      "problemMatcher": ["$eslint-compact"],
+      "presentation": {
+        "reveal": "always"
+      }
+    }
+  ]
+}

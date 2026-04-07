@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VESC_Configuration>
+  <firmware_version>5.3</firmware_version>
+  <hardware>VESC 6 Plus</hardware>
+  
+  <group name="Motor">
+    <param name="motor_current_max" value="80" unit="A" min="0" max="200" description="Maximum motor current" />
+    <param name="motor_current_max_brake" value="60" unit="A" min="0" max="200" description="Maximum brake current" />
+    <param name="motor_kv" value="190" unit="rpm/V" min="0" max="1000" description="Motor KV rating" />
+    <param name="motor_poles" value="14" unit="" min="2" max="100" description="Number of motor poles" />
+  </group>
+  
+  <group name="Battery">
+    <param name="battery_voltage" value="52" unit="V" min="0" max="100" description="Battery nominal voltage" />
+    <param name="battery_current_max" value="60" unit="A" min="0" max="200" description="Maximum battery current" />
+    <param name="battery_cells" value="12" unit="" min="1" max="30" description="Number of battery cells" />
+    <param name="battery_capacity" value="5000" unit="mAh" min="0" max="50000" description="Battery capacity" />
+  </group>
+  
+  <group name="FOC">
+    <param name="foc_angle" value="45" unit="°" min="0" max="90" description="FOC angle" />
+    <param name="foc_current_kp" value="0.05" unit="" description="FOC current Kp" />
+    <param name="foc_current_ki" value="20" unit="" description="FOC current Ki" />
+    <param name="foc_observer_gain" value="1000" unit="" description="FOC observer gain" />
+  </group>
+  
+  <group name="Control">
+    <param name="pid_kp" value="0.03" unit="" description="PID proportional gain" />
+    <param name="pid_ki" value="0.01" unit="" description="PID integral gain" />
+    <param name="pid_kd" value="0.001" unit="" description="PID derivative gain" />
+    <param name="control_mode" value="2" unit="" description="Control mode (0=Duty, 1=Speed, 2=Current)" />
+  </group>
+  
+  <group name="Temperature">
+    <param name="temperature" value="35" unit="°C" description="Current temperature" />
+    <param name="temperature_rated" value="25" unit="°C" description="Rated temperature" />
+    <param name="temp_motor_max" value="100" unit="°C" description="Maximum motor temperature" />
+  </group>
+</VESC_Configuration>
