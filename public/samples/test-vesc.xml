@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VESC_Config version="2.0">
+  <Motor>
+    <Motor_Poles>14</Motor_Poles>
+    <Motor_Inductance>0.000015</Motor_Inductance>
+    <Motor_Resistance>0.025</Motor_Resistance>
+    <Motor_KV>120</Motor_KV>
+    <Motor_Current_Max>80</Motor_Current_Max>
+    <Motor_Current_Min>-80</Motor_Current_Min>
+  </Motor>
+  
+  <Battery>
+    <Battery_Cells>12</Battery_Cells>
+    <Battery_Voltage_Min>33.6</Battery_Voltage_Min>
+    <Battery_Voltage_Max>50.4</Battery_Voltage_Max>
+    <Battery_Current_Max>60</Battery_Current_Max>
+  </Battery>
+  
+  <Controller>
+    <PWM_Frequency>20000</PWM_Frequency>
+    <Temperature_Limit_Motor>100</Temperature_Limit_Motor>
+    <Temperature_Limit_FET>85</Temperature_Limit_FET>
+  </Controller>
+  
+  <FOC>
+    <FOC_Current_Kp>0.0005</FOC_Current_Kp>
+    <FOC_Current_Ki>50</FOC_Current_Ki>
+    <FOC_Sensor_Mode>1</FOC_Sensor_Mode>
+  </FOC>
+</VESC_Config>

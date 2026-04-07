@@ -1,0 +1,31 @@
+========================================
+Motor Specifications Test File
+========================================
+
+Motor Type: BLDC (Brushless DC)
+Manufacturer: Example Motor Co.
+Model: EM-5000
+
+Electrical Parameters:
+- Poles: 14
+- KV Rating: 120 RPM/V
+- Resistance (Phase-to-Phase): 0.025 Ohm
+- Inductance (Phase-to-Phase): 15 uH
+- Maximum Current: 80 A continuous
+- Peak Current: 120 A (10 seconds)
+
+Mechanical Parameters:
+- No-load Speed: 6000 RPM @ 50V
+- Rated Torque: 2.5 Nm
+- Efficiency: 92%
+- Weight: 1.5 kg
+
+Thermal Limits:
+- Max Winding Temperature: 100°C
+- Max Case Temperature: 80°C
+- Thermal Time Constant: 120 seconds
+
+Application: Electric Skateboard
+Battery: 12S LiPo (44.4V nominal)
+Expected Top Speed: 45 km/h
+Expected Range: 30 km

@@ -1,0 +1,36 @@
+========================================
+Battery Specifications Test File
+========================================
+
+Battery Type: LiPo (Lithium Polymer)
+Manufacturer: Example Battery Co.
+Model: EB-12S-5000
+
+Configuration:
+- Cells in Series: 12S
+- Cells in Parallel: 2P
+- Total Cells: 24
+
+Electrical Parameters:
+- Nominal Voltage: 44.4 V
+- Minimum Voltage: 33.6 V (2.8V/cell)
+- Maximum Voltage: 50.4 V (4.2V/cell)
+- Capacity: 10000 mAh (2x 5000mAh)
+- Maximum Discharge Current: 150 A (15C)
+- Maximum Charge Current: 10 A (1C)
+
+Physical Parameters:
+- Weight: 1.8 kg
+- Dimensions: 180 x 80 x 50 mm
+- Connector: XT90
+
+Safety Limits:
+- Minimum Cell Voltage: 2.8 V
+- Maximum Cell Voltage: 4.2 V
+- Low Voltage Cutoff: 3.3 V/cell
+- High Voltage Cutoff: 4.25 V/cell
+- Maximum Temperature: 60°C
+
+Application: Electric Skateboard
+Expected Runtime: 45 min @ 40A average
+Expected Cycles: 300+ @ 80% DoD
