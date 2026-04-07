@@ -9,12 +9,12 @@ if (-not (Test-Path "node_modules")) {
     npm install
 }
 
-# Start dev server
+# Start dev server in background
 Write-Host "🌐 Starting development server..." -ForegroundColor Green
-Start-Process npm -ArgumentList "run", "dev" -NoNewWindow
+Start-Process -FilePath "node" -ArgumentList "node_modules/next/dist/bin/next", "dev" -NoNewWindow
 
 # Wait for server to start
-Start-Sleep -Seconds 3
+Start-Sleep -Seconds 5
 
 # Open browser
 Write-Host "🌍 Opening browser..." -ForegroundColor Green
