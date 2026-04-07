@@ -3,15 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "node node_modules/next/dist/bin/next dev",
+    "build": "node node_modules/next/dist/bin/next build",
+    "start": "node node_modules/next/dist/bin/next start",
+    "lint": "node node_modules/eslint/bin/eslint.js"
   },
   "dependencies": {
-    "next": "16.2.2",
+    "next": "^15",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "@supabase/supabase-js": "^2",
+    "recharts": "^2",
+    "pdf-parse": "^1",
+    "lucide-react": "^0.400",
+    "class-variance-authority": "^0.7",
+    "clsx": "^2",
+    "tailwind-merge": "^2",
+    "@radix-ui/react-dialog": "^1",
+    "@radix-ui/react-slot": "^1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
